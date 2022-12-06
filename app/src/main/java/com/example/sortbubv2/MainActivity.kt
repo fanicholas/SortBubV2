@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 import android.widget.Switch
+import android.widget.TextView
 import kotlin.random.Random
 
 class MainActivity : AppCompatActivity() {
@@ -45,6 +46,40 @@ class MainActivity : AppCompatActivity() {
             s7.text = Random.nextInt(0,9).toString()
             s8.text = Random.nextInt(0,9).toString()
             s9.text = Random.nextInt(0,9).toString()
+        }
+        val psort = findViewById<Button>(R.id.button2)
+        val wys_sort = findViewById<TextView>(R.id.textView)
+        psort.setOnClickListener {
+            val sortowanie = ArrayList<Int>()
+
+            if(s1.isChecked){
+                sortowanie.add((s1.text.toString().toInt()))
+            }
+            if(s2.isChecked){
+                sortowanie.add((s2.text.toString().toInt()))
+            }
+            if(s3.isChecked){
+                sortowanie.add((s3.text.toString().toInt()))
+            }
+            if(s4.isChecked){
+                sortowanie.add((s4.text.toString().toInt()))
+            }
+            if(s5.isChecked){
+                sortowanie.add((s5.text.toString().toInt()))
+            }
+            if(s6.isChecked){
+                sortowanie.add((s6.text.toString().toInt()))
+            }
+            if(s7.isChecked){
+                sortowanie.add((s7.text.toString().toInt()))
+            }
+            if(s8.isChecked){
+                sortowanie.add((s8.text.toString().toInt()))
+            }
+            if(s9.isChecked){
+                sortowanie.add((s9.text.toString().toInt()))
+            }
+
         }
 
             }
