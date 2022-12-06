@@ -51,7 +51,7 @@ class MainActivity : AppCompatActivity() {
         val wys_sort = findViewById<TextView>(R.id.textView)
         psort.setOnClickListener {
             val sortowanie = ArrayList<Int>()
-
+            wys_sort.text = ""
             if(s1.isChecked){
                 sortowanie.add((s1.text.toString().toInt()))
             }
