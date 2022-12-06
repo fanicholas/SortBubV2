@@ -79,6 +79,12 @@ class MainActivity : AppCompatActivity() {
             if(s9.isChecked){
                 sortowanie.add((s9.text.toString().toInt()))
             }
+            sort(sortowanie)
+
+            for(elem in sortowanie)
+            {
+                wys_sort.text = wys_sort.text.toString() + elem.toString()
+            }
 
         }
 
